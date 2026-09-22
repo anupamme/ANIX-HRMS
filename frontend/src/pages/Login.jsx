@@ -39,7 +39,7 @@ export default function Login() {
 
     const cleanIdentifier = identifier.trim();
     if (!cleanIdentifier || !password) {
-      setError('Please enter both Sevak ID / Email and Password.');
+      setError('Please enter both Employee ID / Email and Password.');
       return;
     }
 
@@ -91,7 +91,7 @@ export default function Login() {
         >
           <Stack alignItems="center" spacing={1} sx={{ mb: 3, width: '100%' }}>
             <Typography component="h1" variant="h4" sx={{ fontWeight: 800, color: 'primary.main', textAlign: 'center' }}>
-              ANIX-HRMS
+              ANIX-ADMIN
             </Typography>
             <Typography component="h2" variant="body1" sx={{ color: 'text.secondary', textAlign: 'center' }}>
               Sign in to continue
@@ -110,7 +110,7 @@ export default function Login() {
               required
               fullWidth
               id="identifier"
-              label="Sevak ID or Email"
+              label="Employee ID or Email"
               name="identifier"
               autoComplete="username"
               autoFocus
